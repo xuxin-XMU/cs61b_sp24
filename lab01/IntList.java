@@ -36,7 +36,10 @@ public class IntList {
         return rest.get(i - 1);
     }
 
-    @Override
+    public static IntList addFirst(int x, IntList L) {
+        return new IntList(x, L);
+    }
+
     public String toString() {
         StringBuilder result = new StringBuilder();
         IntList current = this;
