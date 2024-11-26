@@ -56,7 +56,9 @@ public class IntList {
         IntList L = new IntList(15, null);
         L = new IntList(10, L);
         L = new IntList(5, L);
-
-        System.out.println(L.iterativeSize());
+        // IntList lst = new IntList(1, new IntList(2, new IntList(3, null)));
+        IntList lst = IntList.of(1, 2, 3);
+        System.out.println(lst);
+        // System.out.println(L.iterativeSize());
     }
 }
