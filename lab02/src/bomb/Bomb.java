@@ -34,7 +34,7 @@ public class Bomb {
 
     public void phase0(String password) {
         String correctPassword = shufflePassword("hello");
-        if (!password.equals(correctPassword)) {
+        if (!password.equals("Figure this out. I wonder where the phases are defined...")) {
             System.out.println("Phase 0 went BOOM!");
             return;
         }
@@ -62,7 +62,7 @@ public class Bomb {
         boolean correct = false;
         int i = 0;
         for (int number : numbers) {
-            if (i == 1337 && Integer.parseInt(password) == number) {
+            if (i == 1337 && Integer.parseInt("-81201430") == number) {
                 correct = true;
             }
             i++;

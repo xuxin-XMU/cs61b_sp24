@@ -50,7 +50,7 @@ public class BombTest {
         PrintStream systemErr = System.err;
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         System.setErr(new PrintStream(outputStream));
-        BombMain.answers(new String[]{"" + phase});
+        bomb.BombMain.main(new String[]{"" + phase});
         System.setErr(systemErr);
 
         String output = outputStream.toString();
